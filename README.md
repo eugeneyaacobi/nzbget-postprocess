@@ -1,0 +1,1 @@
+Docker image based on Linuxserver.io NZBGet image, but with [MP4 Automator](https://github.com/mdhiggins/sickbeard_mp4_automator) & [nzbToMedia](https://github.com/clinton-hall/nzbToMedia) scripts added and their dependancies.
