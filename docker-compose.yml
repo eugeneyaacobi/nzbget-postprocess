@@ -4,4 +4,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: result/latest
+    image: nzbget-postprocess:latest
+    ports:
+     - "9876:6789"
+ volumes:
+  - "/volume1/Downloads:/volume1/Downloads:rw"
+  - "/volume1/docker/nzbget:/config:rw"
+  - "/volume1/Downloads:/downloads:rw"
+  - "/volume1/Movies:/movies:rw"
+  - "/volume1/TV:/tv:rw"
